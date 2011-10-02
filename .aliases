@@ -5,3 +5,6 @@ alias la="ls -Gla"
 
 alias macmini="autossh -M 0 -t mac-mini.local '/opt/local/bin/tmux attach'"
 alias tmstatus="syslog -F '\$Time \$Message' -k Sender com.apple.backupd -k Time ge -72h | tail -n 25"
+
+# shortcut for opening files in Sublime Text
+alias sl="sublime"
