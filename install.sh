@@ -7,7 +7,7 @@ if [ -d "$dotfiles" ]; then
 	exit 1
 fi
 
-git clone git://github.com/burriko/dotfiles.git "$dotfiles"
+git clone git@github.com:burriko/dotfiles.git "$dotfiles"
 
 function symlink()
 {
