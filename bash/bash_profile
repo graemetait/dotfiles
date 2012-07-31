@@ -1,0 +1,13 @@
+export LC_CTYPE=en_US.UTF-8
+
+# Load dot files from .dotfiles folder
+for file in bash_prompt exports aliases functions extra; do
+  file="$HOME/.dotfiles/bash/$file"
+  [ -e "$file" ] && source "$file"
+done
+
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash  ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
+
+eval "$(rbenv init -)"
